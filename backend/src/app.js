@@ -31,7 +31,7 @@ app.use("/v1", apiV1)
 app.use((req, res) => {
   return res.status(404).json({ error: "Route not found" })
 })
-
+ 
 app.use((err, req, res, next) => {
   console.error("Error:", err)
   return res.status(500).json({ error: "Unknown server error" })
