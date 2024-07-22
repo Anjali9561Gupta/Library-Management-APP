@@ -24,7 +24,7 @@ app.use(
     cookie: { maxAge: 1000 * 60 * 60 * 24 },
     resave: true,
   })
-)
+) 
 
 app.use("/v1", apiV1)
 

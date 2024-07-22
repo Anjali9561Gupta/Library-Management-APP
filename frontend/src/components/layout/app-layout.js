@@ -57,7 +57,7 @@ export const AppLayout = () => {
         if (!user) {
             navigate("/")
         } else if (isAdmin) {
-            navigate("/admin/books/add")
+            navigate("https://library-management-app-1.onrender.com/admin/books/add")
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, isAdmin])
@@ -135,9 +135,9 @@ export const AppLayout = () => {
                 </Container>
             </AppBar>
             <Routes>
-                <Route path="/books" exact element={<BooksList />} />
+                <Route path="https://library-management-app-1.onrender.com/books" exact element={<BooksList />} />
                 <Route
-                    path="/books/:bookIsbn"
+                    path="https://library-management-app-1.onrender.com/books/:bookIsbn"
                     element={
                         <WithLoginProtector>
                             <Book />
@@ -145,7 +145,7 @@ export const AppLayout = () => {
                     }
                 />
                 <Route
-                    path="/admin/books/add"
+                    path="https://library-management-app-1.onrender.com/admin/books/add"
                     element={
                         <WithLoginProtector>
                             <WithAdminProtector>
@@ -156,7 +156,7 @@ export const AppLayout = () => {
                     exact
                 />
                 <Route
-                    path="/admin/books/:bookIsbn/edit"
+                    path="https://library-management-app-1.onrender.com/admin/books/:bookIsbn/edit"
                     element={
                         <WithLoginProtector>
                             <WithAdminProtector>
@@ -165,7 +165,7 @@ export const AppLayout = () => {
                         </WithLoginProtector>
                     }
                 />
-                <Route path="*" element={<Navigate to="/books" replace />} />
+                <Route path="*" element={<Navigate to="https://library-management-app-1.onrender.com/books" replace />} />
             </Routes>
             <LoginDialog
                 open={openLoginDialog}

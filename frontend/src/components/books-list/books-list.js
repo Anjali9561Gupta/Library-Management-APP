@@ -102,7 +102,7 @@ export const BooksList = () => {
                                                         variant="contained"
                                                         component={RouterLink}
                                                         size="small"
-                                                        to={`/books/${book.isbn}`}
+                                                        to={`https://library-management-app-1.onrender.com/books/${book.isbn}`}
                                                     >
                                                         View
                                                     </Button>
@@ -113,7 +113,7 @@ export const BooksList = () => {
                                                                 color="primary"
                                                                 component={RouterLink}
                                                                 size="small"
-                                                                to={`/admin/books/${book.isbn}/edit`}
+                                                                to={`https://library-management-app-1.onrender.com/admin/books/${book.isbn}/edit`}
                                                             >
                                                                 Edit
                                                             </Button>
@@ -204,7 +204,7 @@ export const BooksList = () => {
                                                                     variant="contained"
                                                                     component={RouterLink}
                                                                     size="small"
-                                                                    to={`/books/${book.isbn}`}
+                                                                    to={`https://library-management-app-1.onrender.com/books/${book.isbn}`}
                                                                 >
                                                                     View
                                                                 </Button>
