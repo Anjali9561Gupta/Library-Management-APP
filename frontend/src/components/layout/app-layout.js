@@ -55,7 +55,7 @@ export const AppLayout = () => {
 
     useEffect(() => {
         if (!user) {
-            navigate("/")
+            navigate("https://library-management-app-1.onrender.com/")
         } else if (isAdmin) {
             navigate("https://library-management-app-1.onrender.com/admin/books/add")
         }
@@ -68,7 +68,7 @@ export const AppLayout = () => {
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <AdbIcon sx={{ display: "flex", mr: 1 }} />
-                        <Link to="/" style={{ textDecoration: "none", flexGrow: 1 }}>
+                        <Link to="https://library-management-app-1.onrender.com/" style={{ textDecoration: "none", flexGrow: 1 }}>
                             <Typography
                                 variant="h6"
                                 noWrap

@@ -76,7 +76,7 @@ export const BookForm = () => {
                         priceHistory: [{ price: book.price, modifiedAt: dayjs().utc().format() }],
                         quantityHistory: [{ quantity: book.quantity, modifiedAt: dayjs().utc().format() }],
                     })
-                    .then(() => navigate("/"))
+                    .then(() => navigate("https://library-management-app-1.onrender.com/"))
             }
         }
     }
@@ -109,7 +109,7 @@ export const BookForm = () => {
         if (bookIsbn) {
             BackendApi.book.getBookByIsbn(bookIsbn).then(({ book, error }) => {
                 if (error) {
-                    navigate("/")
+                    navigate("https://library-management-app-1.onrender.com/")
                 } else {
                     setBook(book)
                 }

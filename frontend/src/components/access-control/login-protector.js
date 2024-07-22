@@ -9,5 +9,5 @@ export const WithLoginProtector = ({ children }) => {
     } else {
         NotificationManager.error('Please login to proceed!')
     }
-    return <Navigate to="/" replace />
+    return <Navigate to="https://library-management-app-1.onrender.com/" replace />
 }

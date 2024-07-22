@@ -177,7 +177,7 @@ export const Book = () => {
                                     variant="contained"
                                     color="secondary"
                                     component={RouterLink}
-                                    to={`/admin/books/${bookIsbn}/edit`}
+                                    to={`https://library-management-app-1.onrender.com/admin/books/${bookIsbn}/edit`}
                                 >
                                     Edit Book
                                 </Button>

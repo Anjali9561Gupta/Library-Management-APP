@@ -2,6 +2,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 const express = require("express")
+const cors = require('cors');
 const morgan = require("morgan")
 const cookieParser = require("cookie-parser")
 const sessions = require("express-session")
@@ -9,8 +10,16 @@ const { apiV1 } = require("./routes")
 const { connectDb } = require("./db")
 const { UserModel } = require("./models/user")
 
+
+
 const app = express()
 const port = process.env.PORT ;
+
+app.use(cors({
+  origin: 'http://localhost:3000', // Replace with your frontend's domain
+  methods: 'POST',
+  credentials: true, // Allow cookies if needed
+}));
 
 app.use(morgan("dev"))
 app.use(express.json())

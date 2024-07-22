@@ -6,5 +6,5 @@ export const WithAdminProtector = ({ children }) => {
     if (isAdmin) {
         return children
     }
-    return <Navigate to="/" replace />
+    return <Navigate to="https://library-management-app-1.onrender.com/" replace />
 }
