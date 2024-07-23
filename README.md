@@ -1,6 +1,6 @@
-# Task Management Application 
+#LIBRARY MANAGEMENT SYSTEM  
 
-Create a simple task management application.
+Create a Book library management appliccation.
 
 
 ## Link for Visit
@@ -19,6 +19,7 @@ Create a simple task management application.
 2. **Task Management**:
    
   a. After logging in, Admin should be able to Add, View, Update, and Delete Books details.
+  
   b. Users can Borrow and Return the books.
 
 3. **Backend**:
