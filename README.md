@@ -1,6 +1,6 @@
 ## LIBRARY MANAGEMENT SYSTEM  
 
-Create a Book library management appliccation.
+Create a Book library management application.
 
 
 ## Link for Visit
