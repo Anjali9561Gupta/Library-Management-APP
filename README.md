@@ -13,7 +13,9 @@ Create a Book library management appliccation.
 1. **Register and Login**:
  
   a. Admin should be able to register with their username and passwords.
+  
   b. Users should be able to register with their username and password.
+  
   c. Implement login functionality.
 
 2. **Task Management**:
